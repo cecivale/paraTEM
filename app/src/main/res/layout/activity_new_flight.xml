@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewFlight">
+
+    <Button
+        android:id="@+id/button_startTEM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:drawableLeft="@drawable/ic_play_circle_outline_black_24dp"
+        android:drawablePadding="8sp"
+        android:onClick="launchTEMtool"
+        android:padding="16sp"
+        android:text="@string/start"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button_startChecklist"
+        app:layout_constraintStart_toEndOf="@+id/text_TEM"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_startChecklist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:drawableLeft="@drawable/ic_play_circle_outline_black_24dp"
+        android:drawablePadding="8sp"
+        android:onClick="launchChecklist"
+        android:padding="16sp"
+        android:text="@string/start"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_checklist"
+        app:layout_constraintTop_toBottomOf="@+id/button_startTEM" />
+
+    <TextView
+        android:id="@+id/text_TEM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tem_tool"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_checklist"
+        app:layout_constraintEnd_toStartOf="@+id/button_startTEM"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_checklist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checklist"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/text_TEM"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_startChecklist"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

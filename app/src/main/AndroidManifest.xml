@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cloudbycloud.paratem">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+         <!-- Home/main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- New Flight Activity -->
+        <activity
+            android:name=".NewFlight"
+            android:label="@string/new_flight"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cloudbycloud.paratem.MainActivity" />
+        </activity>
+
+        <!-- TEM tool Activity -->
+        <activity
+            android:name=".temTool"
+            android:label="@string/tem_tool"
+            android:parentActivityName=".NewFlight">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cloudbycloud.paratem.NewFlight" />
+        </activity>
+
+        <!-- Checklist Activity -->
+        <activity android:name=".Checklist"
+            android:label="@string/checklist"
+            android:parentActivityName=".NewFlight">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cloudbycloud.paratem.NewFlight" />
+        </activity>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+    </application>
+
+</manifest>

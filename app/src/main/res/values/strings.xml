@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">paraTEM</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="outstanding_tasks">Outstanding\nTasks</string>
+    <string name="equipment_maintenance">Equipment\nMaintenance</string>
+    <string name="new_flight">New\nFlight</string>
+    <string name="utem">uTEM</string>
+    <string name="other_resources">Other\nResources</string>
+    <string name="tem_tool">TEM Tool</string>
+    <string name="checklist">Checklist</string>
+    <string name="start">Start</string>
+</resources>
